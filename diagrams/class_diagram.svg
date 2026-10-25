@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="420" font-family="Arial" font-size="13">
+  <rect width="700" height="420" fill="#ffffff"/>
+  <text x="350" y="30" text-anchor="middle" font-size="18" font-weight="bold">Sticky Notes - Class Diagram</text>
+
+  <!-- Note model -->
+  <rect x="60" y="70" width="240" height="170" fill="#fff8b0" stroke="black"/>
+  <line x1="60" y1="100" x2="300" y2="100" stroke="black"/>
+  <text x="180" y="92" text-anchor="middle" font-weight="bold">Note (models.Model)</text>
+  <text x="70" y="120">- id: AutoField (PK)</text>
+  <text x="70" y="140">- title: CharField(max_length=255)</text>
+  <text x="70" y="160">- content: TextField</text>
+  <text x="70" y="180">- created_at: DateTimeField</text>
+  <line x1="60" y1="195" x2="300" y2="195" stroke="black"/>
+  <text x="70" y="215">+ __str__(): str</text>
+
+  <!-- Form -->
+  <rect x="380" y="70" width="260" height="130" fill="#e3f0ff" stroke="black"/>
+  <line x1="380" y1="100" x2="640" y2="100" stroke="black"/>
+  <text x="510" y="92" text-anchor="middle" font-weight="bold">NoteForm (forms.ModelForm)</text>
+  <text x="390" y="120">Meta:</text>
+  <text x="390" y="140">  model = Note</text>
+  <text x="390" y="160">  fields = ["title", "content"]</text>
+
+  <!-- Views -->
+  <rect x="60" y="280" width="580" height="120" fill="#e8f5e9" stroke="black"/>
+  <line x1="60" y1="310" x2="640" y2="310" stroke="black"/>
+  <text x="350" y="302" text-anchor="middle" font-weight="bold">Views (notes/views.py)</text>
+  <text x="70" y="330">+ note_list(request)</text>
+  <text x="70" y="350">+ note_detail(request, pk)</text>
+  <text x="70" y="370">+ note_create(request)</text>
+  <text x="350" y="330">+ note_update(request, pk)</text>
+  <text x="350" y="350">+ note_delete(request, pk)</text>
+
+  <!-- Relationships -->
+  <line x1="300" y1="135" x2="380" y2="135" stroke="black"/>
+  <text x="340" y="130" text-anchor="middle" font-size="11">uses</text>
+
+  <line x1="180" y1="240" x2="180" y2="280" stroke="black"/>
+  <text x="195" y="265" font-size="11">manages</text>
+
+  <line x1="510" y1="200" x2="510" y2="280" stroke="black"/>
+  <text x="525" y="245" font-size="11">uses</text>
+</svg>

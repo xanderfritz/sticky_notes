@@ -1,0 +1,120 @@
+/* sticky notes app styles - gaming theme */
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background-color: #121826;
+    color: #e6e6e6;
+    margin: 0;
+}
+
+header {
+    background-color: #1f2a44;
+    color: #39ff14;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #39ff14;
+}
+
+header h1 {
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+main {
+    margin: 20px;
+}
+
+footer {
+    background-color: #1f2a44;
+    color: #39ff14;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #39ff14;
+}
+
+.notes-grid {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.note {
+    background-color: #1e2740;
+    padding: 15px;
+    width: 220px;
+    min-height: 150px;
+    border: 1px solid #39ff14;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(57, 255, 20, 0.25);
+}
+
+.note h3 {
+    margin-top: 0;
+    color: #39ff14;
+}
+
+.note a {
+    text-decoration: none;
+    color: #39ff14;
+}
+
+.note p {
+    color: #e6e6e6;
+}
+
+.note-detail {
+    width: 60%;
+}
+
+.meta {
+    font-size: 0.85em;
+    color: #8a9ab0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #1f2a44;
+    color: #39ff14;
+    padding: 8px 14px;
+    text-decoration: none;
+    border: 1px solid #39ff14;
+    border-radius: 4px;
+    margin: 5px 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #39ff14;
+    color: #121826;
+}
+
+.btn-danger {
+    color: #ff3860;
+    border-color: #ff3860;
+}
+
+.btn-danger:hover {
+    background-color: #ff3860;
+    color: #121826;
+}
+
+form input, form textarea {
+    background-color: #1e2740;
+    color: #e6e6e6;
+    border: 1px solid #39ff14;
+    padding: 6px;
+    border-radius: 4px;
+    width: 300px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form label {
+    color: #39ff14;
+    display: block;
+    margin-top: 10px;
+}
